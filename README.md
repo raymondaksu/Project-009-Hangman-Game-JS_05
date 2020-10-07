@@ -1,4 +1,4 @@
-https://raymondaksu.github.io/JS_03_Hangman_Game/
+https://raymondaksu.github.io/JS-009-Hangman-Game/
 
 # Project-007 : Hangman Game (JS-03)
 
