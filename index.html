@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="title_area">
+        <h3>The Hangman Game</h3>
+    </div>
+
+    <div class="game_area">
+        <div class="top_row">
+            <div class="lives_area">
+                <p id="remaining_lives"> </p>
+            </div>
+
+            <div class="wrong_letters_area">
+                <p id="wrong_letters"></p>
+            </div>
+        </div>
+
+        <div class="guess_area">
+            <p id="guess">________________</p>
+        </div>
+
+        <div class="status_area">
+            <p id="status">Type a letter to find the European country !</p>
+        </div>
+        <div class="reset_area">
+            <button id="reset">Reset Game</button>
+        </div>
+
+    </div>
+
+    <div class="input_area">
+        <input id="inp" type="text">
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

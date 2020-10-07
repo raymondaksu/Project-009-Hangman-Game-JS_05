@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-image: url("./images/back.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_area {
+    position: fixed;
+    width:100%;
+    top: 4rem;
+    text-align: center;
+}
+.title_area h3{
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 0 0 7px #f5f6fa,           
+}
+
+.game_area {
+    width: 70rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.top_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lives_area {
+    font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.wrong_letters_area {
+    background-color: #e55039;
+    border-radius: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.wrong_letters_area #wrong_letters{
+    font-size: 4rem;
+}
+
+.guess_area,
+.status_area {
+    width: 100%;
+    text-align: center;
+}
+
+#status {
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+}
+
+#guess {
+    font-size: 5rem;
+    letter-spacing: 2.3rem;
+}
+
+#reset {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    width: 16rem;
+    border-radius: 1rem;
+    border:none;
+    background-color: aquamarine;
+    box-shadow: 0 0 8px beige;
+    visibility: hidden;
+}
+
+#reset:hover {
+    background-color: #000;
+    color: aquamarine;
+}
+
+.input_area {
+    position: absolute;
+    left: -200%;
+}
+
+@media  screen and (max-width: 1000px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    html {
+        font-size: 5px;
+    }
+
+    .top_row {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lives_area {
+        margin-bottom: 2rem;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+    html {
+        font-size: 5px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .top_row {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lives_area {
+        margin-bottom: 2rem;
+    }
+}
